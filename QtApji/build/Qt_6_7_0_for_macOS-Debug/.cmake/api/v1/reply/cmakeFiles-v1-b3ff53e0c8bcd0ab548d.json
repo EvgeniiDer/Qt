@@ -6,7 +6,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Qt_6_7_0_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake"
+			"path" : "/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -20,7 +20,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake"
+			"path" : "/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -284,7 +284,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
+			"path" : "/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isCMake" : true,
@@ -428,7 +428,7 @@
 		},
 		{
 			"isGenerated" : true,
-			"path" : "build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
+			"path" : "/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake"
 		},
 		{
 			"isExternal" : true,
@@ -951,6 +951,521 @@
 			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Core/Qt6QDarwinMicrophonePermissionPluginAdditionalTargetInfo.cmake"
 		},
 		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6/FindWrapOpenGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/FindOpenGL.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageHandleStandardArgs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/FindPackageMessage.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersion.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfigVersionImpl.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBusTools/Qt6DBusToolsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6DBus/Qt6DBusMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/MacroAddFileDependencies.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QCocoaIntegrationPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginConfig.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginTargets-relwithdebinfo.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets/Qt6QMacStylePluginAdditionalTargetInfo.cmake"
+		},
+		{
 			"isCMake" : true,
 			"isExternal" : true,
 			"path" : "/Users/evgenii/Qt/Tools/CMake/CMake.app/Contents/share/cmake-3.29/Modules/GNUInstallDirs.cmake"
@@ -960,7 +1475,7 @@
 	"paths" : 
 	{
 		"build" : "/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug",
-		"source" : "/Users/evgenii/Project/Qt/QtApji"
+		"source" : "/Users/evgenii/Project/Qt/QtApi"
 	},
 	"version" : 
 	{

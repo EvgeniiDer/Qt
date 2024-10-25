@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-4dd20410fbdfd39645a4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QtApji",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "QtApji::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtApji-Debug-b9939b3c0f918b28f90f.json",
+					"name" : "QtApji",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtApji_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtApji_autogen-Debug-05928c7a7badaa85c316.json",
+					"name" : "QtApji_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QtApji_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QtApji_autogen_timestamp_deps-Debug-fc0e072a8de1d8aa0205.json",
+					"name" : "QtApji_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug",
+		"source" : "/Users/evgenii/Project/Qt/QtApji"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

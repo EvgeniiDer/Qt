@@ -1,4 +1,4 @@
-# Install script for directory: /Users/evgenii/Project/Qt/QtApi
+# Install script for directory: /Users/evgenii/Project/Qt/QtApji
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

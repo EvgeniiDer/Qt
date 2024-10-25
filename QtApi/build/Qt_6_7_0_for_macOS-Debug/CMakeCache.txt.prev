@@ -194,7 +194,7 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 CMAKE_PROJECT_INCLUDE_BEFORE:FILEPATH=/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=QtApi
+CMAKE_PROJECT_NAME:STATIC=QtApji
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -320,13 +320,13 @@ Qt6Widgets_DIR:PATH=/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6Widgets
 Qt6_DIR:PATH=/Users/evgenii/Qt/6.7.0/macos/lib/cmake/Qt6
 
 //Value Computed by CMake
-QtApi_BINARY_DIR:STATIC=/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug
+QtApji_BINARY_DIR:STATIC=/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug
 
 //Value Computed by CMake
-QtApi_IS_TOP_LEVEL:STATIC=ON
+QtApji_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-QtApi_SOURCE_DIR:STATIC=/Users/evgenii/Project/Qt/QtApi
+QtApji_SOURCE_DIR:STATIC=/Users/evgenii/Project/Qt/QtApji
 
 //Path to a library.
 WrapOpenGL_AGL:FILEPATH=/Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk/System/Library/Frameworks/AGL.framework
@@ -394,7 +394,7 @@ CMAKE_GENERATOR_TOOLSET:INTERNAL=
 CMAKE_HAVE_LIBC_PTHREAD:INTERNAL=1
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=/Users/evgenii/Project/Qt/QtApi
+CMAKE_HOME_DIRECTORY:INTERNAL=/Users/evgenii/Project/Qt/QtApji
 //ADVANCED property for variable: CMAKE_INSTALL_BINDIR
 CMAKE_INSTALL_BINDIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_INSTALL_DATADIR
