@@ -19,8 +19,16 @@ MainWindow::MainWindow(const QString& _titleName , int _winW, int _winH)
 void MainWindow::setupCentralWidget()
 {
     centralWidget = new QWidget();
-    QVBoxLayout* layout = new QVBoxLayout(centralWidget);
-    layout->addWidget(new QLabel("Hellow Main Window", centralWidget));
+    buttonOk = new PushButton("Ok", 100, 500);
+    buttonCancel = new PushButton("Cancel");
+    QVBoxLayout* vLayout = new QVBoxLayout(centralWidget);
+    vLayout->addWidget(new QLabel("Hellow Main Window it's Laybel", centralWidget));
+    vLayout->addWidget(new QTextEdit("QTextEdit"));
+    QHBoxLayout* hLayout = new QHBoxLayout();
+    hLayout->addWidget(buttonOk);
+    hLayout->addWidget(buttonCancel);
+    vLayout->addLayout(hLayout);
+
     this->setCentralWidget(centralWidget);
 }
 void MainWindow::setupMainWindow(const QString& _titleName,const int& _winW, const int& _winH )

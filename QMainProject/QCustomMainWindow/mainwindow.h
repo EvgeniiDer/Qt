@@ -5,10 +5,14 @@
 #include<QWidget>
 #include<QLayout>
 #include<QLabel>
-
+#include<QTextEdit>
+#include"../QCustomPushButtons/pushbutton.h"
 class MainWindow : public QMainWindow
 {
 private:
+    QTextEdit* textEdit;
+    PushButton* buttonOk;
+    PushButton* buttonCancel;
     QString titleName;
     int winW;
     int winH;

@@ -3,3 +3,5 @@
 /Users/evgenii/Project/Qt/QMainProject/main.cpp
 /Users/evgenii/Project/Qt/QMainProject/QCustomMainWindow/mainwindow.h
 /Users/evgenii/Project/Qt/QMainProject/QCustomMainWindow/mainwindow.cpp
+/Users/evgenii/Project/Qt/QMainProject/QCustomPushButtons/pushbutton.h
+/Users/evgenii/Project/Qt/QMainProject/QCustomPushButtons/pushbutton.cpp

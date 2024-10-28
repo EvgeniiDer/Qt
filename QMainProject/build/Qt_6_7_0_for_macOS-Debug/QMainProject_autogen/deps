@@ -2,6 +2,8 @@ QMainProject_autogen/timestamp: \
 	/Users/evgenii/Project/Qt/QMainProject/CMakeLists.txt \
 	/Users/evgenii/Project/Qt/QMainProject/QCustomMainWindow/mainwindow.cpp \
 	/Users/evgenii/Project/Qt/QMainProject/QCustomMainWindow/mainwindow.h \
+	/Users/evgenii/Project/Qt/QMainProject/QCustomPushButtons/pushbutton.cpp \
+	/Users/evgenii/Project/Qt/QMainProject/QCustomPushButtons/pushbutton.h \
 	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/.qtc/package-manager/auto-setup.cmake \
 	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeCXXCompiler.cmake \
 	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/CMakeFiles/3.29.3/CMakeSystem.cmake \
