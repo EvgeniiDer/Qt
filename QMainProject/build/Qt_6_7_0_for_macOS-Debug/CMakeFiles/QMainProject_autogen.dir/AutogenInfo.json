@@ -289,6 +289,12 @@
 			null
 		],
 		[
+			"/Users/evgenii/Project/Qt/QMainProject/QCustomPushButtons/pushbutton.h",
+			"MU",
+			"SNJADQL5PQ/moc_pushbutton.cpp",
+			null
+		],
+		[
 			"/Users/evgenii/Project/Qt/QMainProject/head.h",
 			"MU",
 			"EWIEGA46WW/moc_head.cpp",
@@ -354,6 +360,11 @@
 	[
 		[
 			"/Users/evgenii/Project/Qt/QMainProject/QCustomMainWindow/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/evgenii/Project/Qt/QMainProject/QCustomPushButtons/pushbutton.cpp",
 			"MU",
 			null
 		],
