@@ -1,8 +1,12 @@
-#include <QCoreApplication>
+#include"head.h"
+#include"./QCustomMainWindow/mainwindow.h"
 
-int main(int argc, char *argv[])
+QTextStream cout(stdout);
+
+int main(int argc, char* argv[])
 {
-    QCoreApplication a(argc, argv);
-
-    return a.exec();
+    QApplication apl(argc, argv);
+    MainWindow *mainWin = new MainWindow();
+    mainWin->show();
+    apl.exec();
 }

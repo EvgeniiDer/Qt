@@ -1,0 +1,22 @@
+# ninja log v6
+5	34	1730101671240236768	QMainProject_autogen/timestamp	f713dad989628603
+811	986	1730101672045703821	QMainProject	79c11f09be8d499a
+5	34	1730101671240236768	QMainProject_autogen/mocs_compilation.cpp	f713dad989628603
+84	138	1730101152586559069	CMakeFiles/QMainProject.dir/QMainProject_autogen/mocs_compilation.cpp.o	61a4a134d8f0a5cb
+34	811	1730101671268580117	CMakeFiles/QMainProject.dir/main.cpp.o	29c872a36a10eebd
+5	34	1730101671240236768	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/QMainProject_autogen/timestamp	f713dad989628603
+5	34	1730101671240236768	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/QMainProject_autogen/mocs_compilation.cpp	f713dad989628603
+6	33	1730101889236305001	QMainProject_autogen/timestamp	f713dad989628603
+6	33	1730101889236305001	QMainProject_autogen/mocs_compilation.cpp	f713dad989628603
+6	33	1730101889236305001	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/QMainProject_autogen/timestamp	f713dad989628603
+6	33	1730101889236305001	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/QMainProject_autogen/mocs_compilation.cpp	f713dad989628603
+33	685	1730101889263471946	CMakeFiles/QMainProject.dir/main.cpp.o	29c872a36a10eebd
+33	695	1730101889263672562	CMakeFiles/QMainProject.dir/QCustomMainWindow/mainwindow.cpp.o	dc288331c89147a1
+695	796	1730101889925705199	QMainProject	f60e4ec8e68c138b
+5	29	1730102000985969536	QMainProject_autogen/timestamp	f713dad989628603
+5	29	1730102000985969536	QMainProject_autogen/mocs_compilation.cpp	f713dad989628603
+5	29	1730102000985969536	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/QMainProject_autogen/timestamp	f713dad989628603
+5	29	1730102000985969536	/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/QMainProject_autogen/mocs_compilation.cpp	f713dad989628603
+29	683	1730102001009974503	CMakeFiles/QMainProject.dir/QCustomMainWindow/mainwindow.cpp.o	dc288331c89147a1
+29	700	1730102001009774929	CMakeFiles/QMainProject.dir/main.cpp.o	29c872a36a10eebd
+700	801	1730102001680147387	QMainProject	f60e4ec8e68c138b
