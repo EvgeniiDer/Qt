@@ -1,8 +1,0 @@
-# ninja log v6
-1	30	1729855775377929018	QtApji_autogen/timestamp	a32b29d01315126
-606	645	1729855775982475563	QtApji	27ff81bc0f773487
-1	30	1729855775377929018	QtApji_autogen/mocs_compilation.cpp	a32b29d01315126
-1	30	1729855775377929018	/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug/QtApji_autogen/mocs_compilation.cpp	a32b29d01315126
-81	107	1729855767587408840	CMakeFiles/QtApji.dir/QtApji_autogen/mocs_compilation.cpp.o	57dd584dbfbd7473
-1	30	1729855775377929018	/Users/evgenii/Project/Qt/QtApji/build/Qt_6_7_0_for_macOS-Debug/QtApji_autogen/timestamp	a32b29d01315126
-30	604	1729855775406755687	CMakeFiles/QtApji.dir/main.cpp.o	4bd6ab14ebcf739
