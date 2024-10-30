@@ -3,6 +3,10 @@
 
 #include<QPushButton>
 #include<QString>
+#include<QFileDialog>
+#include<QDir>
+#include<QTreeView>
+#include<QStandardItemModel>
 class PushButton : public QPushButton
 {
 public:
@@ -34,12 +38,15 @@ public:
     }
 
 private:
+    QTreeView* treeView;
+    QStandardItemModel* model;
     QString buttonText;
     int buttonW;
     int buttonH;
     void setupButton(const QString& _buttonText, const int& _buttonW , const int& _buttonH );
 private slots:
     void openDirectory();
+    void loadDirectory(const QString& _pathDir);
 
 };
 

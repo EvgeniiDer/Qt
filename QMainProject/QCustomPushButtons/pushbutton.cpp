@@ -12,4 +12,28 @@ void PushButton::setupButton(const QString& _buttonText, const int& _buttonW , c
 {
     this->setText(_buttonText);
     this->setFixedSize(_buttonW, _buttonH);
+
+    connect(this, &QPushButton::clicked, this, &PushButton::openDirectory);
+    treeView = new QTreeView(this);
+    model = new QStandardItemModel(this);
+    treeView->setModel(model);
 }
+void PushButton::openDirectory()
+{
+    QString dirPath = QFileDialog::getExistingDirectory(this, "Select Directory");
+    if(!dirPath.isEmpty())
+        loadDirectory(dirPath);
+}
+void PushButton::loadDirectory(const QString &_dirPath)
+{
+    model->clear();
+    QDir dir(_dirPath);
+    QFileInfoList files = dir.entryInfoList(QDir::NoDotAndDotDot | QDir::AllEntries);
+
+    for(const QFileInfo& fileInfo : files)
+    {
+        QStandardItem* item = new QStandardItem(fileInfo.fileName());
+        model->appendRow(item);
+    }
+}
+
