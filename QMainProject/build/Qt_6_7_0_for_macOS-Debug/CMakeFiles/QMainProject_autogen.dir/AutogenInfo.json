@@ -289,6 +289,12 @@
 			null
 		],
 		[
+			"/Users/evgenii/Project/Qt/QMainProject/QCustomMenuBar/menubar.h",
+			"MU",
+			"FDOQI36FRA/moc_menubar.cpp",
+			null
+		],
+		[
 			"/Users/evgenii/Project/Qt/QMainProject/QCustomPushButtons/pushbutton.h",
 			"MU",
 			"SNJADQL5PQ/moc_pushbutton.cpp",
@@ -360,6 +366,11 @@
 	[
 		[
 			"/Users/evgenii/Project/Qt/QMainProject/QCustomMainWindow/mainwindow.cpp",
+			"MU",
+			null
+		],
+		[
+			"/Users/evgenii/Project/Qt/QMainProject/QCustomMenuBar/menubar.cpp",
 			"MU",
 			null
 		],

@@ -2,7 +2,7 @@
 #define PUSHBUTTON_H
 
 #include<QPushButton>
-
+#include<QString>
 class PushButton : public QPushButton
 {
 public:
@@ -38,6 +38,8 @@ private:
     int buttonW;
     int buttonH;
     void setupButton(const QString& _buttonText, const int& _buttonW , const int& _buttonH );
+private slots:
+    void openDirectory();
 
 };
 

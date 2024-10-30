@@ -17,6 +17,7 @@ add_executable(QMainProject
   head.h
   QCustomMainWindow/mainwindow.h QCustomMainWindow/mainwindow.cpp
   QCustomPushButtons/pushbutton.h QCustomPushButtons/pushbutton.cpp
+  QCustomMenuBar/menubar.h QCustomMenuBar/menubar.cpp
 
 )
 target_link_libraries(QMainProject Qt${QT_VERSION_MAJOR}::Core Qt${QT_VERSION_MAJOR}::Widgets)

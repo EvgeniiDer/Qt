@@ -1,8 +1,11 @@
 #include "mainwindow.h"
 
 MainWindow::MainWindow() {
+
     this->setupMainWindow();
     this->setupCentralWidget();
+
+
 }
 MainWindow::MainWindow(const QString& _titleName) : titleName(_titleName)
 {
@@ -18,12 +21,22 @@ MainWindow::MainWindow(const QString& _titleName , int _winW, int _winH)
 }
 void MainWindow::setupCentralWidget()
 {
+    menu = new MenuBar("File");
+    this->menuBar()->addMenu(menu);
+
     centralWidget = new QWidget();
     buttonOk = new PushButton("Ok", 100, 500);
     buttonCancel = new PushButton("Cancel");
+
+    infoLabel = new QLabel(tr("Hellow Main Window it's Label"));
+    infoLabel->setFrameStyle(QFrame::StyledPanel| QFrame::Sunken);
+    infoLabel->setAlignment(Qt::AlignCenter);
+
+
     QVBoxLayout* vLayout = new QVBoxLayout(centralWidget);
-    vLayout->addWidget(new QLabel("Hellow Main Window it's Laybel", centralWidget));
+    vLayout->addWidget(infoLabel);
     vLayout->addWidget(new QTextEdit("QTextEdit"));
+
     QHBoxLayout* hLayout = new QHBoxLayout();
     hLayout->addWidget(buttonOk);
     hLayout->addWidget(buttonCancel);

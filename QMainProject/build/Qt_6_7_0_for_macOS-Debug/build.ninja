@@ -81,6 +81,14 @@ build CMakeFiles/QMainProject.dir/QCustomPushButtons/pushbutton.cpp.o: CXX_COMPI
   OBJECT_DIR = CMakeFiles/QMainProject.dir
   OBJECT_FILE_DIR = CMakeFiles/QMainProject.dir/QCustomPushButtons
 
+build CMakeFiles/QMainProject.dir/QCustomMenuBar/menubar.cpp.o: CXX_COMPILER__QMainProject_unscanned_Debug /Users/evgenii/Project/Qt/QMainProject/QCustomMenuBar/menubar.cpp || cmake_object_order_depends_target_QMainProject
+  DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
+  DEP_FILE = CMakeFiles/QMainProject.dir/QCustomMenuBar/menubar.cpp.o.d
+  FLAGS = -DQT_QML_DEBUG -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk -fcolor-diagnostics
+  INCLUDES = -I/Users/evgenii/Project/Qt/QMainProject/build/Qt_6_7_0_for_macOS-Debug/QMainProject_autogen/include -isystem /Users/evgenii/Qt/6.7.0/macos/lib/QtCore.framework/Headers -iframework /Users/evgenii/Qt/6.7.0/macos/lib -isystem /Users/evgenii/Qt/6.7.0/macos/mkspecs/macx-clang -isystem /Users/evgenii/Qt/6.7.0/macos/include -isystem /Users/evgenii/Qt/6.7.0/macos/lib/QtWidgets.framework/Headers -isystem /Users/evgenii/Qt/6.7.0/macos/lib/QtGui.framework/Headers
+  OBJECT_DIR = CMakeFiles/QMainProject.dir
+  OBJECT_FILE_DIR = CMakeFiles/QMainProject.dir/QCustomMenuBar
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target QMainProject
@@ -89,7 +97,7 @@ build CMakeFiles/QMainProject.dir/QCustomPushButtons/pushbutton.cpp.o: CXX_COMPI
 #############################################
 # Link the executable QMainProject
 
-build QMainProject: CXX_EXECUTABLE_LINKER__QMainProject_Debug CMakeFiles/QMainProject.dir/QMainProject_autogen/mocs_compilation.cpp.o CMakeFiles/QMainProject.dir/main.cpp.o CMakeFiles/QMainProject.dir/QCustomMainWindow/mainwindow.cpp.o CMakeFiles/QMainProject.dir/QCustomPushButtons/pushbutton.cpp.o | /Users/evgenii/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/evgenii/Qt/6.7.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/evgenii/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore || QMainProject_autogen QMainProject_autogen_timestamp_deps
+build QMainProject: CXX_EXECUTABLE_LINKER__QMainProject_Debug CMakeFiles/QMainProject.dir/QMainProject_autogen/mocs_compilation.cpp.o CMakeFiles/QMainProject.dir/main.cpp.o CMakeFiles/QMainProject.dir/QCustomMainWindow/mainwindow.cpp.o CMakeFiles/QMainProject.dir/QCustomPushButtons/pushbutton.cpp.o CMakeFiles/QMainProject.dir/QCustomMenuBar/menubar.cpp.o | /Users/evgenii/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets /Users/evgenii/Qt/6.7.0/macos/lib/QtGui.framework/Versions/A/QtGui /Users/evgenii/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore || QMainProject_autogen QMainProject_autogen_timestamp_deps
   FLAGS = -DQT_QML_DEBUG -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.0.sdk
   LINK_LIBRARIES = -Wl,-rpath,/Users/evgenii/Qt/6.7.0/macos/lib  /Users/evgenii/Qt/6.7.0/macos/lib/QtWidgets.framework/Versions/A/QtWidgets  /Users/evgenii/Qt/6.7.0/macos/lib/QtGui.framework/Versions/A/QtGui  /Users/evgenii/Qt/6.7.0/macos/lib/QtCore.framework/Versions/A/QtCore  -framework IOKit  -framework DiskArbitration  -framework OpenGL  -framework AGL  -framework AppKit  -framework ImageIO  -framework Metal
   LINK_PATH = -F/Users/evgenii/Qt/6.7.0/macos/lib
