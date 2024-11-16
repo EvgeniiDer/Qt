@@ -16,6 +16,7 @@ MainWindow::MainWindow(QWidget *parent)
     bttnAdd = new QPushButton("Add", centralWidget);
     bttnRem = new QPushButton("Remove", centralWidget);
     bttnAddNewLine = new QPushButton("Add New Line", centralWidget);
+    bttnDeleteLine = new QPushButton("Delete Line", centralWidget);
     txtEditLeft = new QTextEdit(centralWidget);
     txtEditRight = new QTextEdit(centralWidget);
 
@@ -30,12 +31,14 @@ MainWindow::MainWindow(QWidget *parent)
     bttnCancel->setGeometry(760, 320, 100, 40);
 
     bttnAddNewLine->setGeometry(20, 320, 100, 40);
+    bttnDeleteLine->setGeometry(130, 320, 100, 40);
 
     connect(bttnCancel, &QPushButton::clicked, this, &MainWindow::onCloseButtonSlot);
     connect(bttnOk, &QPushButton::clicked, this, &MainWindow::onOkButtonSlot);
     connect(bttnAddNewLine, &QPushButton::clicked, this, &MainWindow::onAddNewLineSlot);
     connect(bttnAdd, &QPushButton::clicked, this, &MainWindow::onAddFromLeftToRightSlot);
     connect(bttnRem, &QPushButton::clicked, this, &MainWindow::onRemoveFromRightToLeftSlot);
+    connect(bttnDeleteLine, &QPushButton::clicked, this, &MainWindow::onDeleteFromLeftSlot);
 }
 void MainWindow::onCloseButtonSlot()
 {
@@ -55,6 +58,26 @@ void MainWindow::onAddNewLineSlot()
     {
         txtEditLeft->append(text);
     }
+}
+void MainWindow::onDeleteFromLeftSlot()
+{
+    removeLine(txtEditLeft);
+    removeEmptyLines(txtEditLeft);
+
+}
+void MainWindow::removeLine(QTextEdit *textEdit)
+{
+    QTextCursor cursor = textEdit->textCursor();
+    cursor.movePosition(QTextCursor::StartOfBlock);
+    int statr = cursor.positionInBlock();
+    cursor.movePosition(QTextCursor::EndOfBlock, QTextCursor::KeepAnchor);
+    cursor.removeSelectedText();
+    if(cursor.position() < textEdit->document()->blockCount() - 1)
+        {
+            cursor.deleteChar();
+        }
+    textEdit->setTextCursor(cursor);
+
 }
 void MainWindow::onRemoveFromRightToLeftSlot()
 {
@@ -79,17 +102,18 @@ void MainWindow::onAddFromLeftToRightSlot()
     cursor.removeSelectedText(); // Удаляем текст из левого редактора
     removeEmptyLines(txtEditLeft);
 }
+
 void MainWindow::removeEmptyLines(QTextEdit *textEdit)
 {
     QTextDocument *doc = textEdit->document();
-    QTextCursor cursor(textEdit->textCursor()); // Создаем курсор на основе текущего курсора
+    QTextCursor cursor(textEdit->textCursor());
 
     for (int i = doc->blockCount() - 1; i >= 0; --i) {
         QTextBlock block = doc->findBlockByNumber(i);
         if (block.text().trimmed().isEmpty())
             {
-                cursor.setPosition(block.position()); // Устанавливаем курсор в начало пустого блока
-                cursor.movePosition(QTextCursor::EndOfBlock, QTextCursor::KeepAnchor); // Выбираем пустую строку
+                cursor.setPosition(block.position());
+                cursor.movePosition(QTextCursor::EndOfBlock, QTextCursor::KeepAnchor);
                 cursor.removeSelectedText();
                 if (i > 0)
                     {

@@ -16,6 +16,7 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 private:
     QPushButton* bttnOk;
+    QPushButton* bttnDeleteLine;
     QPushButton* bttnAdd;
     QPushButton* bttnRem;
     QPushButton* bttnCancel;
@@ -27,6 +28,7 @@ private:
 public:
     explicit MainWindow(QWidget *parent = nullptr);
     void removeEmptyLines(QTextEdit *textEdit);
+    void removeLine(QTextEdit *textEdit);
 
 signals:
 public slots:
@@ -35,6 +37,7 @@ public slots:
     void onAddNewLineSlot();
     void onAddFromLeftToRightSlot();
     void onRemoveFromRightToLeftSlot();
+    void onDeleteFromLeftSlot();
 
 };
 
