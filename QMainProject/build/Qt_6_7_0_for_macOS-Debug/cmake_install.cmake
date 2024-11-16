@@ -42,7 +42,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/QMainProject" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/QMainProject")
     execute_process(COMMAND /usr/bin/install_name_tool
-      -delete_rpath "/Users/evgenii/Qt/6.7.0/macos/lib"
+      -delete_rpath "/Users/evgenii/Qt/6.8.0/macos/lib"
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/QMainProject")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" -u -r "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/QMainProject")

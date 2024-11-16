@@ -16,6 +16,8 @@ MenuBar::MenuBar(const QString& strTitle, QWidget* parent) : QMenu(strTitle, par
     this->addAction(closeAction);
 
 }
+///QTextsStream cout(stdout);
+
 void MenuBar::openNewFile()
 {
     QMessageBox::information(this, "Information", "Opening New File");

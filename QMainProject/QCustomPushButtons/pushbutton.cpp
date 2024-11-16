@@ -14,9 +14,7 @@ void PushButton::setupButton(const QString& _buttonText, const int& _buttonW , c
     this->setFixedSize(_buttonW, _buttonH);
 
     connect(this, &QPushButton::clicked, this, &PushButton::openDirectory);
-    treeView = new QTreeView(this);
-    model = new QStandardItemModel(this);
-    treeView->setModel(model);
+
 }
 void PushButton::openDirectory()
 {

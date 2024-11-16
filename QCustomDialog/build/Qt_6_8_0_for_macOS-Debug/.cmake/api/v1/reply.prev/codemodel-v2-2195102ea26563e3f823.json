@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-aa0111ee7b5bc890b4e8.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QCustomDialog",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "QCustomDialog::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QCustomDialog-Debug-35369293caf438d9fb93.json",
+					"name" : "QCustomDialog",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QCustomDialog_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QCustomDialog_autogen-Debug-5ef5e77a881b91e4470c.json",
+					"name" : "QCustomDialog_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "QCustomDialog_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-QCustomDialog_autogen_timestamp_deps-Debug-ab9d1ac06d315468bf31.json",
+					"name" : "QCustomDialog_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/evgenii/Project/Qt/QCustomDialog/build/Qt_6_8_0_for_macOS-Debug",
+		"source" : "/Users/evgenii/Project/Qt/QCustomDialog"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
