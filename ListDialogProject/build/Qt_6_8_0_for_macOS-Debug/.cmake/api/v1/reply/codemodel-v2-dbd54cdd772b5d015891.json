@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-3cc13cac64f567567814.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "ListDialogProject",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ListDialogProject::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ListDialogProject-Debug-94978a620e4f8e99456a.json",
+					"name" : "ListDialogProject",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ListDialogProject_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ListDialogProject_autogen-Debug-f6998211b5ca0087d59d.json",
+					"name" : "ListDialogProject_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ListDialogProject_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ListDialogProject_autogen_timestamp_deps-Debug-179035246125fb4e5f9a.json",
+					"name" : "ListDialogProject_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/evgenii/Project/Qt/ListDialogProject/build/Qt_6_8_0_for_macOS-Debug",
+		"source" : "/Users/evgenii/Project/Qt/ListDialogProject"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

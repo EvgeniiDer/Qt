@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_ListDialogProject_FILE /Users/evgenii/Project/Qt/ListDialogProject/build/Qt_6_8_0_for_macOS-Debug/ListDialogProject)
+set(__QT_DEPLOY_TARGET_ListDialogProject_TYPE EXECUTABLE)
