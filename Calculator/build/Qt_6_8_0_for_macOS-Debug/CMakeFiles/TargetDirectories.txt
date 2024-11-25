@@ -1,0 +1,9 @@
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/Calculator.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/edit_cache.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/rebuild_cache.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/list_install_components.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/install.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/install/local.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/install/strip.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/Calculator_autogen_timestamp_deps.dir
+/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/CMakeFiles/Calculator_autogen.dir

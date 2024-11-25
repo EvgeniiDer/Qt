@@ -1,0 +1,9 @@
+# ninja log v6
+558	2684	1732503295804601182	CMakeFiles/Calculator.dir/Calculator_autogen/mocs_compilation.cpp.o	8542aefefed20fd6
+9	51	1732503424202479127	Calculator_autogen/mocs_compilation.cpp	6c23550b9e31a5c4
+559	2683	1732503295805090486	CMakeFiles/Calculator.dir/main.cpp.o	f3afac2210ad6623
+52	1616	1732503424245220312	CMakeFiles/Calculator.dir/mainwindow.cpp.o	930705d77af3d7f5
+9	51	1732503424202479127	/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/Calculator_autogen/timestamp	6c23550b9e31a5c4
+9	51	1732503424202479127	/Users/evgenii/Projects/Qt/Calculator/build/Qt_6_8_0_for_macOS-Debug/Calculator_autogen/mocs_compilation.cpp	6c23550b9e31a5c4
+9	51	1732503424202479127	Calculator_autogen/timestamp	6c23550b9e31a5c4
+1616	1793	1732503425809755739	Calculator.app/Contents/MacOS/Calculator	6c1b748ebf7a7d13
