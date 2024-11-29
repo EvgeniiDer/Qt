@@ -1,7 +1,9 @@
 #ifndef CALLABEL_H
 #define CALLABEL_H
 
-class calLabel
+#include <QLabel>
+
+class calLabel : public QLabel
 {
 public:
     calLabel();

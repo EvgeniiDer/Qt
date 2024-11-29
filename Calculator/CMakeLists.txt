@@ -25,6 +25,9 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         calculatorLineEdit/calculatorlineEdit.h calculatorLineEdit/calculatorlineEdit.cpp
         calLabel/calLabel.h calLabel/calLabel.cpp
+        ExprValidator/expvalidator.h ExprValidator/expvalidator.cpp
+        CallButton/calculatorbutton.h CallButton/calculatorbutton.cpp
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Calculator APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

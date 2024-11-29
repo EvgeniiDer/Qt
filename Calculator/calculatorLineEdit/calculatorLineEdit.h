@@ -1,19 +1,24 @@
 #ifndef CALCULATORLINEDIT_H
 #define CALCULATORLINEDIT_H
 
+#include<QDebug>
 #include<QLineEdit>
-#include<QDoubleValidator>
 #include<QKeyEvent>
 #include<QFont>
 #include<QPalette>
-class CalculatorLineEidt : public QLineEdit
+#include<QValidator>
+#include"../ExprValidator/expvalidator.h"
+class CalculatorLineEdit : public QLineEdit
 {
+    Q_OBJECT
 public:
-    CalculatorLineEidt(QWidget* parent = nullptr);
+    CalculatorLineEdit(QWidget* parent = nullptr);
 private:
-    QDoubleValidator* validator;
+    void validateInput();
+    ExpValidator* validator;
 protected:
     void keyPressEvent(QKeyEvent* event)override;
+
 
 
 };

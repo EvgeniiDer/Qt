@@ -6,7 +6,8 @@
 #include "calculatorLineEdit/calculatorLineEdit.h"
 #include <QVBoxLayout>
 #include <QHBoxLayout>
-
+#include "CallButton/calculatorbutton.h"
+#include <QGroupBox>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -23,12 +24,15 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QLabel* mainLbl;
-    QHBoxLayout* hLayout;
-    QVBoxLayout* vLayout;
+    QLabel* lblResult;
+    //QHBoxLayout* hLayout;
+    QVBoxLayout* mainLayout;
     QWidget* centralWgt;
-    CalculatorLineEidt* lnEdit;
+    CalculatorLineEdit* lnEdit;
     void setStyle(QWidget& wgt);
+    CalculatorButton* buttons;
+    QGridLayout* grdLayout;
+
 
 };
 #endif // MAINWINDOW_H
