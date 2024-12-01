@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-0a93205c490f1757e1ae.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "DynamicWindow",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "DynamicWindow::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DynamicWindow-Debug-c5ec4f42d86c15ef1423.json",
+					"name" : "DynamicWindow",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DynamicWindow_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DynamicWindow_autogen-Debug-dc66768235a4d91b0adc.json",
+					"name" : "DynamicWindow_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "DynamicWindow_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-DynamicWindow_autogen_timestamp_deps-Debug-334d88681561a8aa927c.json",
+					"name" : "DynamicWindow_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/Users/evgenii/Project/Qt/DynamicWindow/DynamicWindow/build/Qt_6_8_0_for_macOS-Debug",
+		"source" : "/Users/evgenii/Project/Qt/DynamicWindow/DynamicWindow"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

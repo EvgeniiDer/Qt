@@ -1,0 +1,2 @@
+set(__QT_DEPLOY_TARGET_DynamicWindow_FILE /Users/evgenii/Project/Qt/DynamicWindow/DynamicWindow/build/Qt_6_8_0_for_macOS-Debug/DynamicWindow.app/Contents/MacOS/DynamicWindow)
+set(__QT_DEPLOY_TARGET_DynamicWindow_TYPE EXECUTABLE)
