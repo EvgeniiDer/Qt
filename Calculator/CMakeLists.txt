@@ -27,6 +27,8 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         calLabel/calLabel.h calLabel/calLabel.cpp
         ExprValidator/expvalidator.h ExprValidator/expvalidator.cpp
         CallButton/calculatorbutton.h CallButton/calculatorbutton.cpp
+        CalculatorCore/lexer.h CalculatorCore/lexer.cpp
+        CalculatorCore/parser.h CalculatorCore/parser.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

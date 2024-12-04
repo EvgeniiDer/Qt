@@ -3,10 +3,10 @@
 
 #include <QLabel>
 
-class calLabel : public QLabel
+class CalLabel : public QLabel
 {
 public:
-    calLabel();
+    explicit CalLabel(const QString& text, QWidget* parent = nullptr);
 };
 
 #endif // CALLABEL_H

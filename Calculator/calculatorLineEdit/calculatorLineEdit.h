@@ -8,16 +8,23 @@
 #include<QPalette>
 #include<QValidator>
 #include"../ExprValidator/expvalidator.h"
+#include"../CalculatorCore/parser.h"
+
 class CalculatorLineEdit : public QLineEdit
 {
     Q_OBJECT
 public:
     CalculatorLineEdit(QWidget* parent = nullptr);
+    bool isEquals();
+    void addInput(const QString& inputChar);
 private:
     void validateInput();
     ExpValidator* validator;
+    bool equals;
 protected:
     void keyPressEvent(QKeyEvent* event)override;
+signals:
+    void equalsPressed(const QString& result);
 
 
 

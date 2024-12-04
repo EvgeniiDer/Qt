@@ -4,6 +4,8 @@ CalculatorLineEdit::CalculatorLineEdit(QWidget* parent)
 {
     //validator = new ExpValidator();
     //this->setValidator(validator);
+    this->setFocus();
+    equals = false;
     this->setAlignment(Qt::AlignRight);
     this->setStyleSheet("QLineEdit {"
                         "border: none;" // Удаление рамки
@@ -19,10 +21,18 @@ CalculatorLineEdit::CalculatorLineEdit(QWidget* parent)
     this->setPlaceholderText("Enter number");
 
 }
+void CalculatorLineEdit::addInput(const QString& inputChar)
+{
+    if(this->text().length() > 9)
+    {
+        return;
+    }
+}
 void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
 {
     if (this->text().length() >= 9 &&
         !(event->key() == Qt::Key_Backspace || event->key() == Qt::Key_Delete)) {
+        equals = false;
         event->ignore();
         return;
     }
@@ -32,33 +42,70 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
          inputChar[0] == '+' ||
          inputChar[0] == '-' ||
          inputChar[0] == '*' ||
-         inputChar[0] == '/' /*||
-         inputChar[0] == '='*/))
+         inputChar[0] == '/' ||
+         inputChar[0] == '='))
     {
         if(this->text().isEmpty() && (inputChar[0] == '+' || inputChar[0] == '-' ||
-                                      inputChar[0] == '/' || inputChar[0] == '*' /*||
-                                      inputChar[0] == '='*/))
+                                      inputChar[0] == '/' || inputChar[0] == '*' ||
+                                      inputChar[0] == '='))
         {
             event->ignore();
+            equals = false;
             return;
         }
-        if(!this->text().isEmpty())
+        else if(!this->text().isEmpty())
         {
+            //Проверка на повторяющие символы
             QChar lastChar = this->text().back();
             if((lastChar == '+' || lastChar == '-' ||
-                lastChar == '*' || lastChar == '/' /*||
-                lastChar == '='*/)
+                lastChar == '*' || lastChar == '/' ||
+                lastChar == '=')
                 &&
                 (inputChar[0] == '+' || inputChar[0] == '-'||
-                 inputChar[0] == '*' || inputChar[0] == '/'/*||
-                 inputChar[0] == '='*/))
+                 inputChar[0] == '*' || inputChar[0] == '/'||
+                 inputChar[0] == '='))
                 {
+                qDebug() <<"Error Repeting!!";
+                equals = false;
                 event->ignore();
                 return;
                 }
+           if (inputChar[0] == '=' || event->key() == Qt::Key_Return || event->key() == Qt::Key_Enter)
+            {
+                // Проверка на наличие операторов
+                if (!this->text().contains('*') &&
+                    !this->text().contains('-') &&
+                    !this->text().contains('/') &&
+                    !this->text().contains('+'))
+                {
+                    qDebug() << "Ignore not operators";
+                    equals = false;
+                    event->ignore();
+                    return;
+                }
+                else{
+                    equals = true;
+                    QString result = this->text();
+                    emit equalsPressed(result);
+                    qDebug() << "Signal sent: " << result;
+                    Lexer lexer(result);
+                    Parser parser(lexer);
+                    try{
+                        double result = parser.parse();
+                        this->setText(QString::number(result));
+                    }catch(const std::exception& e)
+                    {
+                        qDebug() << "Error: " << e.what();
+                    }
+                    event->accept();
+                    return;
+                }
+            }
         }
+
         this->setText(this->text() + inputChar);
         this->setCursorPosition(this->text().length());
+        event->accept();
     } else if(event->key() == Qt::Key_Backspace || event->key() == Qt::Key_Delete)
         {
         if(!this->text().isEmpty())
@@ -66,10 +113,17 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
                 this->setText(this->text().chopped(1));
                 this->setCursorPosition(this->text().length());
             }
+        event->accept();
         }
+
+
     else {
         event->ignore();
     }
+}
+bool CalculatorLineEdit::isEquals()
+{
+    return equals;
 }
 
 

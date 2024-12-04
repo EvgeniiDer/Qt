@@ -2,9 +2,11 @@
 #include "./ui_mainwindow.h"
 /*
  Что нужно доделалть!!
-1. Прописать логику для Калькулятора(или польская нотация или при помощи Рекурсии)
-2. Дописать QLabel для отражения результата
+1. Прописать логику для Калькулятора(или польская нотация или Лексического анализа) +
+2. Дописать QLabel для отражения результата                                         +
 3. Если будет вермя изменить расположение кнопок в ручную
+4. Не работают дробные числа
+5
 */
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -18,15 +20,18 @@ MainWindow::MainWindow(QWidget *parent)
 
     this->setWindowTitle("Calculator");
     mainLayout = new QVBoxLayout(centralWgt);
-    lblResult = new QLabel("", centralWgt);
+    lblResult = new CalLabel("Result", centralWgt);
     lnEdit = new CalculatorLineEdit();
+    //Подключаем сигнал из CalcualatorLineEdit к слоту MainWindow
+    connect(lnEdit, &CalculatorLineEdit::equalsPressed, this, &MainWindow::updateLabel);
+
     mainLayout->addWidget(lnEdit);
     mainLayout->addWidget(lblResult);
     grdLayout = new QGridLayout(this);
 
 
     grdLayout->setSpacing(1);
-    //grdLayout->setSt
+
 
 
     QStringList buttonLabels[5] = {
@@ -49,6 +54,10 @@ MainWindow::MainWindow(QWidget *parent)
             }else if(j == 3)
             {
                 buttons = new CalculatorButton(buttonLabels[i][j], centralWgt, "#CC9900");
+                connect(buttons, &CalculatorButton::clicked, this, [this, buttonLabels, i, j]()
+                        {
+                    lnEdit->setText(lnEdit->text() + buttonLabels[i][j]);
+                });
                 grdLayout->addWidget(buttons, row, col); // Добавляем кнопку в сетку
                 col++; // Переходим к следующему столбцу
             }
@@ -84,4 +93,8 @@ void MainWindow::setStyle(QWidget& wgt)
                       //"border-radius: 15px;" // Закругление углов
                       "}"
                       );
+}
+void MainWindow::updateLabel(const QString& result)
+{
+    lblResult->setText(lnEdit->text());
 }

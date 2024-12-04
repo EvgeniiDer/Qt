@@ -8,6 +8,7 @@
 #include <QHBoxLayout>
 #include "CallButton/calculatorbutton.h"
 #include <QGroupBox>
+#include "calLabel/calLabel.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -24,7 +25,7 @@ public:
 
 private:
     Ui::MainWindow *ui;
-    QLabel* lblResult;
+    CalLabel* lblResult;
     //QHBoxLayout* hLayout;
     QVBoxLayout* mainLayout;
     QWidget* centralWgt;
@@ -32,6 +33,9 @@ private:
     void setStyle(QWidget& wgt);
     CalculatorButton* buttons;
     QGridLayout* grdLayout;
+private slots:
+    void updateLabel(const QString& result);
+
 
 
 };
