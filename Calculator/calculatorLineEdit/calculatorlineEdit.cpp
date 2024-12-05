@@ -23,10 +23,58 @@ CalculatorLineEdit::CalculatorLineEdit(QWidget* parent)
 }
 void CalculatorLineEdit::addInput(const QString& inputChar)
 {
+
     if(this->text().length() > 9)
     {
         return;
     }
+    if (!this->text().isEmpty()) {
+        QChar lastChar = this->text().back();
+        if ((lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/' || lastChar == '=') &&
+            (inputChar == "+" || inputChar == "-" || inputChar == "*" || inputChar == "/" || inputChar == '='))
+        {
+            qDebug() << "Error Repeating!!";
+            return; // Игнорируем повторяющийся оператор
+        }
+    }
+    else if(this->text().isEmpty())
+        {
+        if((inputChar == "+" || inputChar == "-" || inputChar == "*" || inputChar == "/" || inputChar == '='))
+        {
+            qDebug() << "Error: Cannot start with an operator";
+            return;//Проверка выражения на вхождение первым Токеном арифметических операторов
+        }
+    }
+    if(inputChar == "=")
+    {
+        if(!this->text().contains("*") &&
+           !this->text().contains("/") &&
+           !this->text().contains("+") &&
+           !this->text().contains("-"))
+        {
+            qDebug() << "Erro: Ignore not operators";
+            return;//Проверка на пристутсвите Арифметических операторов
+        }else
+        {
+            QString result = this->text();
+            emit equalsPressed(result);
+            qDebug() << "Signal sent: " << result;
+            Lexer lexer(result);
+            Parser parser(lexer);
+            try{
+                double result = parser.parse();
+                this->setText(QString::number(result));
+            }catch(const std::exception& e)
+                {
+                    qDebug() << "Error: " << e.what();
+                }
+
+        }
+        return;
+    }
+    // Добавляем ввод в QLineEdit
+    this->setText(this->text() + inputChar);
+    this->setCursorPosition(this->text().length());
 }
 void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
 {

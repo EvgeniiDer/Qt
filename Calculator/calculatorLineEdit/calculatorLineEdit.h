@@ -16,6 +16,7 @@ class CalculatorLineEdit : public QLineEdit
 public:
     CalculatorLineEdit(QWidget* parent = nullptr);
     bool isEquals();
+public slots:
     void addInput(const QString& inputChar);
 private:
     void validateInput();

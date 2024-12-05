@@ -37,7 +37,7 @@ MainWindow::MainWindow(QWidget *parent)
     QStringList buttonLabels[5] = {
         {"<-","AC", "-/+", "/"},
         {"7", "8", "9", "*"},
-        {"4", "5", "6", "-"},
+        {"4", "5", "6", "/"},
         {"1", "2", "3", "+"},
         {"pr", "0", ".", "="}
     };
@@ -49,6 +49,10 @@ MainWindow::MainWindow(QWidget *parent)
         for (int j = 0; j < 4; ++j) { // 4 колонки
             if (i == 0 && j < 3) { // Проверяем, есть ли кнопка в данной позиции
                 buttons = new CalculatorButton(buttonLabels[i][j], centralWgt, "#303030");
+                connect(buttons, &CalculatorButton::clicked, this,[this,buttonLabels, i, j]()
+                {
+                    lnEdit->addInput(buttonLabels[i][j]);
+                });
                 grdLayout->addWidget(buttons, row, col); // Добавляем кнопку в сетку
                 col++; // Переходим к следующему столбцу
             }else if(j == 3)
@@ -56,7 +60,8 @@ MainWindow::MainWindow(QWidget *parent)
                 buttons = new CalculatorButton(buttonLabels[i][j], centralWgt, "#CC9900");
                 connect(buttons, &CalculatorButton::clicked, this, [this, buttonLabels, i, j]()
                         {
-                    lnEdit->setText(lnEdit->text() + buttonLabels[i][j]);
+                    lnEdit->addInput(buttonLabels[i][j]);
+
                 });
                 grdLayout->addWidget(buttons, row, col); // Добавляем кнопку в сетку
                 col++; // Переходим к следующему столбцу
@@ -64,6 +69,10 @@ MainWindow::MainWindow(QWidget *parent)
             else
             {
                 buttons = new CalculatorButton(buttonLabels[i][j], centralWgt, "#505050");
+                connect(buttons, &CalculatorButton::clicked, this, [this, buttonLabels, i, j]()
+                        {
+                    lnEdit->addInput(buttonLabels[i][j]);
+                        });
                 grdLayout->addWidget(buttons, row, col); // Добавляем кнопку в сетку
                 col++; // Переходим к следующему столбцу
             }
