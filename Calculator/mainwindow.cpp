@@ -41,12 +41,12 @@ MainWindow::MainWindow(QWidget *parent)
         {"1", "2", "3", "+"},
         {"pr", "0", ".", "="}
     };
-
+    CalculatorButton* buttons = nullptr;
     int row = 1; // Начинаем с первой строки
     int col = 0; // Начинаем с первого столбца
-
     for (int i = 0; i < 5; ++i) { // 5 строк
-        for (int j = 0; j < 4; ++j) { // 4 колонки
+        for (int j = 0; j < 4; ++j)// 4 колонки
+        {
             if (i == 0 && j < 3) { // Проверяем, есть ли кнопка в данной позиции
                 buttons = new CalculatorButton(buttonLabels[i][j], centralWgt, "#303030");
                 connect(buttons, &CalculatorButton::clicked, this,[this,buttonLabels, i, j]()
@@ -63,6 +63,7 @@ MainWindow::MainWindow(QWidget *parent)
                     lnEdit->addInput(buttonLabels[i][j]);
 
                 });
+
                 grdLayout->addWidget(buttons, row, col); // Добавляем кнопку в сетку
                 col++; // Переходим к следующему столбцу
             }
@@ -73,6 +74,15 @@ MainWindow::MainWindow(QWidget *parent)
                         {
                     lnEdit->addInput(buttonLabels[i][j]);
                         });
+                connect(buttons, &QPushButton::pressed, this, [buttons]()
+                        {
+                            buttons->setProperty("isPressed", true);
+                            buttons->update();
+                        });
+                connect(buttons, &QPushButton::released, this, [buttons]() {
+                    buttons->setProperty("isPressed", false); // Сбрасываем состояние нажатия
+                    buttons->update(); // Перерисовываем кнопку
+                });
                 grdLayout->addWidget(buttons, row, col); // Добавляем кнопку в сетку
                 col++; // Переходим к следующему столбцу
             }
