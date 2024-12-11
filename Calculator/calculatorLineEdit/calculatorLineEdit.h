@@ -22,6 +22,7 @@ private:
     void validateInput();
     ExpValidator* validator;
     bool equals;
+    QString result;
 protected:
     void keyPressEvent(QKeyEvent* event)override;
 signals:

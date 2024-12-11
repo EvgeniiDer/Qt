@@ -30,8 +30,8 @@ void CalculatorLineEdit::addInput(const QString& inputChar)
     }
     if (!this->text().isEmpty()) {
         QChar lastChar = this->text().back();
-        if ((lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/' || lastChar == '=') &&
-            (inputChar == "+" || inputChar == "-" || inputChar == "*" || inputChar == "/" || inputChar == '='))
+        if ((lastChar == '.' || lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/' || lastChar == '=') &&
+            (inputChar == "."|| inputChar == "+"|| inputChar == "-"|| inputChar == "*"|| inputChar == "/"|| inputChar == '='))
         {
             qDebug() << "Error Repeating!!";
             return; // Игнорируем повторяющийся оператор
@@ -39,10 +39,16 @@ void CalculatorLineEdit::addInput(const QString& inputChar)
     }
     else if(this->text().isEmpty())
         {
-        if((inputChar == "+" || inputChar == "-" || inputChar == "*" || inputChar == "/" || inputChar == '='))
+        if((inputChar == "+" || inputChar == "-" || inputChar == "*" || inputChar == "/" || inputChar == '=' /*|| inputChar == "."*/))
         {
             qDebug() << "Error: Cannot start with an operator";
             return;//Проверка выражения на вхождение первым Токеном арифметических операторов
+        }
+        else if(inputChar == ".")
+        {
+
+            QString shiftText = 0 + this->text();
+            this->setText(shiftText);
         }
     }
     if(inputChar == "=")
@@ -91,7 +97,8 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
          inputChar[0] == '-' ||
          inputChar[0] == '*' ||
          inputChar[0] == '/' ||
-         inputChar[0] == '='))
+         inputChar[0] == '=' ||
+         inputChar[0] == '.'))
     {
         if(this->text().isEmpty() && (inputChar[0] == '+' || inputChar[0] == '-' ||
                                       inputChar[0] == '/' || inputChar[0] == '*' ||
@@ -101,17 +108,21 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
             equals = false;
             return;
         }
+        else if(this->text().isEmpty() &&(inputChar[0] == '.'))
+        {
+            result = "0.";
+        }
         else if(!this->text().isEmpty())
         {
             //Проверка на повторяющие символы
             QChar lastChar = this->text().back();
             if((lastChar == '+' || lastChar == '-' ||
                 lastChar == '*' || lastChar == '/' ||
-                lastChar == '=')
+                lastChar == '=' || lastChar == '.')
                 &&
                 (inputChar[0] == '+' || inputChar[0] == '-'||
                  inputChar[0] == '*' || inputChar[0] == '/'||
-                 inputChar[0] == '='))
+                 inputChar[0] == '=' || inputChar[0] == '.'))
                 {
                 qDebug() <<"Error Repeting!!";
                 equals = false;
@@ -133,7 +144,10 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
                 }
                 else{
                     equals = true;
-                    QString result = this->text();
+                    if(!result.isEmpty())
+                    {
+                        result = result + this->text();
+                    }
                     emit equalsPressed(result);
                     qDebug() << "Signal sent: " << result;
                     Lexer lexer(result);

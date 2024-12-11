@@ -8,9 +8,24 @@ Lexer::Lexer(const QString& text) : txt(text), pos{0}
 QString Lexer::get_number()
 {
     QString result;
-    while(pos < txt.length() && txt[pos].isDigit())
+    bool hasDot = false;
+    while(pos < txt.length())
     {
-        result = result + txt[pos++];
+        QChar currentChar = txt[pos];
+        if(currentChar.isDigit())
+        {
+            result += txt[pos++];
+        }
+        else if(currentChar == '.' &&!hasDot)
+        {
+            result += txt[pos++];
+            hasDot = true;
+
+        }
+        else{
+            break;
+        }
+
     }
     return result;
 }
@@ -25,7 +40,7 @@ Token Lexer::getNextToken()
             pos++;
             continue;
         }
-        else if(currentChar.isDigit())
+        else if(currentChar.isDigit() || (currentChar == '.' && pos + 1 < txt.length() && txt[pos + 1].isDigit()))
         {
             return Token{
                 TokenType::Number,
