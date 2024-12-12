@@ -26,7 +26,6 @@ struct Token{
 class Lexer
 {
 private:
-
     QString txt;
     size_t pos;
     QString get_number();

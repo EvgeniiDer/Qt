@@ -28,21 +28,24 @@ void CalculatorLineEdit::addInput(const QString& inputChar)
     {
         return;
     }
-    if (!this->text().isEmpty()) {
+    if (!this->text().isEmpty())
+    {
+        // Проверка на повторяющиеся операторы
         QChar lastChar = this->text().back();
         if ((lastChar == '.' || lastChar == '+' || lastChar == '-' || lastChar == '*' || lastChar == '/' || lastChar == '=') &&
             (inputChar == "."|| inputChar == "+"|| inputChar == "-"|| inputChar == "*"|| inputChar == "/"|| inputChar == '='))
         {
-            qDebug() << "Error Repeating!!";
-            return; // Игнорируем повторяющийся оператор
+            qDebug() << "Input Error: Repeating!!";
+            return;
         }
     }
     else if(this->text().isEmpty())
         {
+        //Проверка выражения на вхождение первым Токеном арифметических операторов
         if((inputChar == "+" || inputChar == "-" || inputChar == "*" || inputChar == "/" || inputChar == '=' /*|| inputChar == "."*/))
         {
-            qDebug() << "Error: Cannot start with an operator";
-            return;//Проверка выражения на вхождение первым Токеном арифметических операторов
+            qDebug() << "Input Error: Cannot start with an operator";
+            return;
         }
         else if(inputChar == ".")
         {
@@ -52,28 +55,18 @@ void CalculatorLineEdit::addInput(const QString& inputChar)
     }
     if(inputChar == "=")
     {
+        //Проверка на пристутсвите Арифметических операторов
         if(!this->text().contains("*") &&
            !this->text().contains("/") &&
            !this->text().contains("+") &&
            !this->text().contains("-"))
         {
-            qDebug() << "Error: Ignore not operators";
-            return;//Проверка на пристутсвите Арифметических операторов
+            qDebug() << "Input Error: Ignore not operators";
+            return;
         }else
         {
             QString result = this->text();
-            emit equalsPressed(result);
-            qDebug() << "Signal sent: " << result;
-            Lexer lexer(result);
-            Parser parser(lexer);
-            try{
-                double result = parser.parse();
-                this->setText(QString::number(result));
-            }catch(const std::exception& e)
-                {
-                    qDebug() << "Error: " << e.what();
-                }
-
+            sentSignal(result);//Отправляем Сигнал в Calculator QLabel(CallLabel)
         }
         return;
     }
@@ -83,6 +76,7 @@ void CalculatorLineEdit::addInput(const QString& inputChar)
 }
 void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
 {
+    //Проверка на максимальное колличество симолов во вхождении
     if (this->text().length() >= 9 &&
         !(event->key() == Qt::Key_Backspace || event->key() == Qt::Key_Delete)) {
         equals = false;
@@ -101,11 +95,11 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
          event->key() == Qt::Key_Return ||
          event->key() == Qt::Key_Enter))
     {
+        //Проверка на первый символ
         if(this->text().isEmpty() && (inputChar[0] == '+' || inputChar[0] == '-' ||
                                       inputChar[0] == '/' || inputChar[0] == '*' ||
                                       inputChar[0] == '='))
         {
-            //Проверка на первый символ
             event->ignore();
             equals = false;
             return;
@@ -125,9 +119,10 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
                 &&
                 (inputChar[0] == '+' || inputChar[0] == '-'||
                  inputChar[0] == '*' || inputChar[0] == '/'||
-                 inputChar[0] == '=' || inputChar[0] == '.'))
+                 inputChar[0] == '=' || inputChar[0] == '.'||
+                    event->key() == Qt::Key_Return || event->key() == Qt::Key_Enter))
                 {
-                qDebug() <<"Error Repeting!!";
+                qDebug() <<"KeyEvent Error: Repeting!!";
                 equals = false;
                 event->ignore();
                 return;
@@ -140,15 +135,16 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
                     !this->text().contains('/') &&
                     !this->text().contains('+'))
                 {
-                    qDebug() << "Ignore not operators";
+                    qDebug() << "KeyEvent Error: Ignore not operators";
                     equals = false;
                     event->ignore();
                     return;
                 }
+                //Проверка на воторяющие
                 else{
                     equals = true;
                     QString result = this->text();
-                    sentSignal(result);///Отправляем Сигнал в Calculator QLabel(CallLabel)
+                    sentSignal(result);//Отправляем Сигнал в Calculator QLabel(CallLabel)
                     event->accept();
                     return;
                 }
