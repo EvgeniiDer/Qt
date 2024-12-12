@@ -46,7 +46,6 @@ void CalculatorLineEdit::addInput(const QString& inputChar)
         }
         else if(inputChar == ".")
         {
-
             QString shiftText = 0 + this->text();
             this->setText(shiftText);
         }
@@ -58,7 +57,7 @@ void CalculatorLineEdit::addInput(const QString& inputChar)
            !this->text().contains("+") &&
            !this->text().contains("-"))
         {
-            qDebug() << "Erro: Ignore not operators";
+            qDebug() << "Error: Ignore not operators";
             return;//Проверка на пристутсвите Арифметических операторов
         }else
         {
@@ -98,19 +97,23 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
          inputChar[0] == '*' ||
          inputChar[0] == '/' ||
          inputChar[0] == '=' ||
-         inputChar[0] == '.'))
+         inputChar[0] == '.' ||
+         event->key() == Qt::Key_Return ||
+         event->key() == Qt::Key_Enter))
     {
         if(this->text().isEmpty() && (inputChar[0] == '+' || inputChar[0] == '-' ||
                                       inputChar[0] == '/' || inputChar[0] == '*' ||
                                       inputChar[0] == '='))
         {
+            //Проверка на первый символ
             event->ignore();
             equals = false;
             return;
         }
         else if(this->text().isEmpty() &&(inputChar[0] == '.'))
         {
-            result = "0.";
+            QString shiftText = 0 + this->text();
+            this->setText(shiftText);
         }
         else if(!this->text().isEmpty())
         {
@@ -144,21 +147,8 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
                 }
                 else{
                     equals = true;
-                    if(!result.isEmpty())
-                    {
-                        result = result + this->text();
-                    }
-                    emit equalsPressed(result);
-                    qDebug() << "Signal sent: " << result;
-                    Lexer lexer(result);
-                    Parser parser(lexer);
-                    try{
-                        double result = parser.parse();
-                        this->setText(QString::number(result));
-                    }catch(const std::exception& e)
-                    {
-                        qDebug() << "Error: " << e.what();
-                    }
+                    QString result = this->text();
+                    sentSignal(result);///Отправляем Сигнал в Calculator QLabel(CallLabel)
                     event->accept();
                     return;
                 }
@@ -177,10 +167,22 @@ void CalculatorLineEdit::keyPressEvent(QKeyEvent* event)
             }
         event->accept();
         }
-
-
     else {
         event->ignore();
+    }
+}
+void CalculatorLineEdit::sentSignal(const QString& result)
+{
+    emit equalsPressed(result);
+    qDebug() << "Signal sent: " << result;
+    Lexer lexer(result);
+    Parser parser(lexer);
+    try{
+        double result = parser.parse();
+        this->setText(QString::number(result));
+    }catch(const std::exception& e)
+    {
+        qDebug() << "Error: " << e.what();
     }
 }
 bool CalculatorLineEdit::isEquals()

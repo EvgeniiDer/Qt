@@ -22,7 +22,8 @@ private:
     void validateInput();
     ExpValidator* validator;
     bool equals;
-    QString result;
+    //QString result;
+    void sentSignal(const QString& result); // Дописать методо для добавления!!!!!
 protected:
     void keyPressEvent(QKeyEvent* event)override;
 signals:
