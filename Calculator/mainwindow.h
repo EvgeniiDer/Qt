@@ -9,6 +9,7 @@
 #include "CallButton/calculatorbutton.h"
 #include <QGroupBox>
 #include "calLabel/calLabel.h"
+#include "ContextMenuHandler/contextmenuhandler.h"
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -26,15 +27,18 @@ public:
 private:
     Ui::MainWindow *ui;
     CalLabel* lblResult;
-    //QHBoxLayout* hLayout;
     QVBoxLayout* mainLayout;
     QWidget* centralWgt;
     CalculatorLineEdit* lnEdit;
     void setStyle(QWidget& wgt);
     CalculatorButton* buttons;
     QGridLayout* grdLayout;
+    ContextMenuHandler* contextMenuHandler;
 private slots:
     void updateLabel(const QString& result);
+protected:
+    void mousePressEvent(QMouseEvent* event);
+    //void contextMenuEvent(QContextMenuEvent *event)
 
 
 

@@ -23,6 +23,25 @@ CalculatorLineEdit::CalculatorLineEdit(QWidget* parent)
 }
 void CalculatorLineEdit::addInput(const QString& inputChar)
 {
+    if(inputChar == "AC")
+    {
+        if(!this->text().isEmpty())
+        {
+            this->clear();
+        }
+        return;
+    }
+    if(inputChar == "<-")
+    {
+        QString currentText = this->text();
+        if(!currentText.isEmpty())
+        {
+            currentText.chop(1);
+            this->setText(currentText);
+            this->setCursorPosition(currentText.length());
+        }
+        return;
+    }
 
     if(this->text().length() > 9)
     {

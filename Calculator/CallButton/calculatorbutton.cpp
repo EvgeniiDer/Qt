@@ -29,8 +29,6 @@ void CalculatorButton::paintEvent(QPaintEvent* event)
         painter.setBrush(QColor(btnColor));
     }
 
-
-
     painter.setPen(Qt::NoPen);
     painter.drawEllipse(0, 0, this->width(), this->height());
 

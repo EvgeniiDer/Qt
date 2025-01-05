@@ -29,6 +29,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         CallButton/calculatorbutton.h CallButton/calculatorbutton.cpp
         CalculatorCore/lexer.h CalculatorCore/lexer.cpp
         CalculatorCore/parser.h CalculatorCore/parser.cpp
+        ContextMenuHandler/contextmenuhandler.h ContextMenuHandler/contextmenuhandler.cpp
 
     )
 # Define target properties for Android with Qt 6 as:

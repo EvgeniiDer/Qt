@@ -1,0 +1,9 @@
+# ninja log v6
+3	390	1735997084001281891	Delete_autogen/timestamp	d721350c9cee2d06
+3	390	1735997084001281891	Delete_autogen/mocs_compilation.cpp	d721350c9cee2d06
+3	390	1735997084001281891	/Users/evgenii/Project/Qt/DynamicWindow/Delete/build/Qt_6_8_0_for_macOS-Debug/Delete_autogen/timestamp	d721350c9cee2d06
+3	390	1735997084001281891	/Users/evgenii/Project/Qt/DynamicWindow/Delete/build/Qt_6_8_0_for_macOS-Debug/Delete_autogen/mocs_compilation.cpp	d721350c9cee2d06
+392	2276	1735997084018419863	CMakeFiles/Delete.dir/Delete_autogen/mocs_compilation.cpp.o	b7933878335b7288
+392	2283	1735997084018666404	CMakeFiles/Delete.dir/main.cpp.o	d8e533807d36bc0a
+392	2306	1735997084018873653	CMakeFiles/Delete.dir/mainwindow.cpp.o	20f4f3ac4908d32e
+2306	2529	1735997085932524531	Delete.app/Contents/MacOS/Delete	7be6a4d5e5d5b913

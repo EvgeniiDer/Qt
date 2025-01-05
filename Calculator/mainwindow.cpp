@@ -2,19 +2,27 @@
 #include "./ui_mainwindow.h"
 /*
  Что нужно доделалть!!
-1. Реализовать кнопки '<-' и 'C';
+1. Реализовать кнопки '<-' и 'C';                               +
 2. На экране калькулятора использовать кастомный шрифт;         +
 3. При нажатии ПКМ на калькуляторе отобраить контекстное меню,
-   из которого можно выбрать скин и шрифт экрана калькулятора;
+   из которого можно выбрать скин и шрифт экрана калькулятора; +
 4. При переключении скинов должен меняться цвет окна, экрана
-   и шрифта на экране  калькулятора;
+   и шрифта на экране  калькулятора; +(Логика понятно поковыряться с СSS)
 */
+constexpr int WINDOW_WIDTH = 300;
+constexpr int WINDOW_HEIGHT = 450;
+
+constexpr int WINDOW_XP = 800;
+constexpr int WINDOW_YP = 300;
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
 {
+
     ui->setupUi(this);
-    this->setFixedSize(300, 450);
+    this->setFixedSize(WINDOW_WIDTH, WINDOW_HEIGHT);
+    this->move(WINDOW_XP, WINDOW_YP);
     centralWgt = new QWidget();
     setStyle(*centralWgt);
     this->setCentralWidget(centralWgt);
@@ -30,7 +38,7 @@ MainWindow::MainWindow(QWidget *parent)
     mainLayout->addWidget(lblResult);
     grdLayout = new QGridLayout(this);
 
-
+    contextMenuHandler = new ContextMenuHandler(this);
     grdLayout->setSpacing(1);
 
 
@@ -118,3 +126,10 @@ void MainWindow::updateLabel(const QString& result)
 {
     lblResult->setText(lnEdit->text());
 }
+void MainWindow::mousePressEvent(QMouseEvent* event)
+{
+    if (event->button() == Qt::RightButton) { // Проверяем, нажата ли правая кнопка мыши
+        contextMenuHandler->showContexMenu(event->globalPos()); // устанавливаем координаты контекстного выпадающего контектстного меню
+    }
+}
+

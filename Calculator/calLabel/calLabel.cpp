@@ -1,5 +1,5 @@
 #include "calLabel.h"
-
+///Настройки Результата
 CalLabel::CalLabel(const QString& text, QWidget* parent) :QLabel(text, parent)
 {
     this->setAlignment(Qt::AlignRight);
