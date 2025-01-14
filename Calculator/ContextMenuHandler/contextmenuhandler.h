@@ -8,6 +8,8 @@
 #include <QAction>
 #include <QInputDialog>
 #include <QPointer>
+#include <QFontDialog>
+
 
 class MainWindow; // Предварительное определение класса
 
@@ -19,6 +21,7 @@ private:
 public:
     ContextMenuHandler(MainWindow* mainWindow);
     void showContexMenu(const QPoint& pos) const;
+private slots:
     void changeSkin();
     void changeFont();
 };

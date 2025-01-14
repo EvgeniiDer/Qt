@@ -23,6 +23,8 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+    void setupCalculatorButtons(const QString& controlButtons, const QString& operationSymbols, const QString& numbers);
+    QWidget* getCentralWgt()const;
 
 private:
     Ui::MainWindow *ui;
@@ -39,6 +41,7 @@ private slots:
 protected:
     void mousePressEvent(QMouseEvent* event);
     //void contextMenuEvent(QContextMenuEvent *event)
+    //274 20 40
 
 
 

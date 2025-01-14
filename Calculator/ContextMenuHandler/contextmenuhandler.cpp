@@ -26,7 +26,7 @@ void ContextMenuHandler::changeSkin()
 {
     //QMessageBox::information(mainWindow, "Select Skin", "There will be a choice of skins here");
     // Здесь можно реализовать логику выбора скина
-    // Например, открытие диалогового окна с выбором скина
+    // Пример, открытие диалогового окна с выбором скина
     QStringList skins = {"Light", "Dark", "Blue", "Green"};
     bool ok;
     QString selectedSkin = QInputDialog::getItem(mainWindow, "Select Skin", "Select Skin:", skins, 0, false, &ok);
@@ -35,20 +35,56 @@ void ContextMenuHandler::changeSkin()
         // Применяем выбранный скин
         if (selectedSkin == "Light")
         {
-            mainWindow->setStyleSheet("background-color: white; color: black;");
+            mainWindow->getCentralWgt()->setStyleSheet("background-color: white;"
+                                                       "padding: 5px;"
+                                                       "border: none;");
         } else if (selectedSkin == "Dark")
         {
-            mainWindow->setStyleSheet("background-color: black; color: white;");
+            mainWindow->getCentralWgt()->setStyleSheet("background-color: black;"
+                                                       "padding: 5px;"
+                                                       "border: none;");
         } else if (selectedSkin == "Blue")
         {
-            mainWindow->setStyleSheet("background-color: blue; color: white;");
+            mainWindow->getCentralWgt()->setStyleSheet("background-color: blue;"
+                                                       "padding: 5px;"
+                                                       "border: none;");
         } else if (selectedSkin == "Green")
         {
-            mainWindow->setStyleSheet("background-color: green; color: white;");
+            mainWindow->getCentralWgt()->setStyleSheet("background-color: green;"
+                                                       "padding: 5px;"
+                                                       "border: none;");
         }
     }
 }
 void ContextMenuHandler::changeFont()
 {
-    QMessageBox::information(mainWindow, "Select Font", "There will be a choice of font here");
+    //QMessageBox::information(mainWindow, "Select Font", "There will be a choice of font here");
+    bool ok;
+    QFont font = QFontDialog::getFont(&ok, mainWindow->getCentralWgt()->font(), mainWindow);
+    if(ok)
+    {
+        //Изменяет Шрифт главного виджета
+        mainWindow->getCentralWgt()->setFont(font);
+
+        //Ищем Экземпляры CalcultorButton
+        QList<CalculatorButton*> listButtons = mainWindow->findChildren<CalculatorButton*>();
+
+        //Прменяем шрифт ко всем Найденным экземлпярам класса CalculatorButton
+        for(CalculatorButton* button: listButtons)
+        {
+            button->setFont(font);
+        }
+        //Ищем Экземпляры CalculatorLineEdit
+        QList<CalculatorLineEdit*> lnEditFont = mainWindow->findChildren<CalculatorLineEdit*>();
+        for(CalculatorLineEdit* ld: lnEditFont)
+        {
+            ld->setFont(font);
+        }
+        //Применяем шрифт ко всем Найденым экземплярам класса CalLabel
+        QList<CalLabel*> cLabelFont = mainWindow->findChildren<CalLabel*>();
+        for(CalLabel* lb: cLabelFont)
+        {
+            lb->setFont(font);
+        }
+    }
 }

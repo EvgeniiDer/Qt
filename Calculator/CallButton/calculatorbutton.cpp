@@ -8,6 +8,10 @@ CalculatorButton::CalculatorButton(const QString& strLabel,QWidget* parent, cons
 
     this->setFixedSize(50, 50);
 }
+void CalculatorButton::setFont(const QFont& font)
+{
+    QPushButton::setFont(font);
+}
 void CalculatorButton::onPressed()
 {
     isPressed = true;
@@ -34,5 +38,4 @@ void CalculatorButton::paintEvent(QPaintEvent* event)
 
     painter.setPen(Qt::white);
     painter.drawText(rect(), Qt::AlignCenter, text());
-
 }

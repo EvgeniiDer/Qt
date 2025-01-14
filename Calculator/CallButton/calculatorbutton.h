@@ -5,11 +5,13 @@
 #include<QPalette>
 #include<QPaintEvent>
 #include<QPainter>
+
 class CalculatorButton : public QPushButton
 {
     Q_OBJECT
 public:
     CalculatorButton(const QString& strLabel, QWidget* parent = nullptr, const QColor& color = QColor("#404040")) ;
+    void setFont(const QFont& font);
 private:
     QColor btnColor;
     bool isPressed;

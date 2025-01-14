@@ -21,6 +21,10 @@ CalculatorLineEdit::CalculatorLineEdit(QWidget* parent)
     this->setPlaceholderText("Enter number");
 
 }
+/*void CalculatorLineEdit::setFont(const QFont& font)
+{
+    this->setFont(font);
+}*/
 void CalculatorLineEdit::addInput(const QString& inputChar)
 {
     if(inputChar == "AC")

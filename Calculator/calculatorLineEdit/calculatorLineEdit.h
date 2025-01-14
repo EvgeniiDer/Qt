@@ -15,6 +15,7 @@ class CalculatorLineEdit : public QLineEdit
     Q_OBJECT
 public:
     CalculatorLineEdit(QWidget* parent = nullptr);
+    //void setMyFont(const QFont& font);
     bool isEquals();
 public slots:
     void addInput(const QString& inputChar);
