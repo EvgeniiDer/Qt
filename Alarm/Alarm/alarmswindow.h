@@ -21,8 +21,10 @@ class AlarmsWindow : public QDialog
 public:
     AlarmsWindow(QWidget* parent = nullptr);
 
-    //~AlarmsWindow()override;
+    ~AlarmsWindow()override;
     void checkAlarm(QTime currentTime);
+    void loadAlarms();
+    void saveAlarms();
 private slots:
     void removeAlarm();
     void editAlarm();
@@ -42,8 +44,7 @@ private:
     QList<AlarmData> alarmDataList;
     QListWidget *alarmListWidget;
 
-    void loadAlarms();
-    void saveAlarms();
+
     void updateAlarmList();
     //bool isAlarmToday(const AlarmData& alarm);
 

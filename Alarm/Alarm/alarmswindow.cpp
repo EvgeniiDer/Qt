@@ -13,6 +13,7 @@
 
 AlarmsWindow::AlarmsWindow(QWidget* parent) : QDialog(parent)
 {
+    loadAlarms();
     this->setWindowTitle("Alarm");
     QVBoxLayout *mainLayout = new QVBoxLayout(this);
     QHBoxLayout *timeLayout = new QHBoxLayout();
@@ -54,6 +55,10 @@ AlarmsWindow::AlarmsWindow(QWidget* parent) : QDialog(parent)
         this->checkAlarm(QTime::currentTime());
     });
     alarmTimer->start(1000);
+}
+AlarmsWindow::~AlarmsWindow()
+{
+    saveAlarms();
 }
 void AlarmsWindow::editAlarm()//!!!!!
 {
@@ -159,4 +164,41 @@ void AlarmsWindow::addAlarm(const AlarmData& alarm)
         qDebug() << "Alarm Already Exist";
     }
 
+}
+void AlarmsWindow::loadAlarms()
+{
+    QSettings settings("MyCompany", "ClockApp");
+    int size = settings.beginReadArray("alarms");
+    for(int i = 0; i < size; ++i)
+    {
+        settings.setArrayIndex(i);
+        QTime time = QTime::fromString(settings.value("time").toString(),"hh:mm");
+        QVector<bool> days;
+
+        QVariant daysVariant = settings.value("daysOfWeek");
+        if(daysVariant.isValid() && daysVariant.canConvert<QVector<bool>>())
+        {
+            days = daysVariant.value<QVector<bool>>();
+        }
+        else
+        {
+            days = QVector<bool>(7, true);
+        }
+        alarmDataList.emplace_back(time, days);
+
+    }
+    settings.endArray();
+}
+
+void AlarmsWindow::saveAlarms()
+{
+    QSettings settings("MyCompany", "ClockApp");
+    settings.beginWriteArray("alarms");
+    for(int i = 0; i < alarmDataList.size(); ++i)
+    {
+        settings.setArrayIndex(i);
+        settings.setValue("time",alarmDataList[i].time.toString("hh:mm"));
+        settings.setValue("daysOfWeek", QVariant::fromValue(alarmDataList[i].daysOfWeek));
+    }
+    settings.endArray();
 }

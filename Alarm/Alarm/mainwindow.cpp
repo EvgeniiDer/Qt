@@ -10,12 +10,14 @@
 #include <QSettings>
 #include <QFontDatabase>
 #include <QPainter>
+#include <QMouseEvent>
+
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent),
     settings("MyCompany", "ClockApp")
 {
     this->setAttribute(Qt::WA_TranslucentBackground);
-    //this->setWindowFlag(Qt::FramelessWindowHint);
+    this->setWindowFlag(Qt::FramelessWindowHint);
 
     topmost = false;
     showControls = false;
@@ -159,6 +161,7 @@ void MainWindow::loadSettings()
     int mainWindowX = settings.value("mainWindowX", 100).toInt();
     int mainWindowY = settings.value("mainWindowY", 100).toInt();
     move(mainWindowX, mainWindowY);
+    alarmsWindow->loadAlarms();
 }
 void MainWindow::saveSettings()
 {
@@ -167,8 +170,33 @@ void MainWindow::saveSettings()
 
     settings.setValue("mainWindowX", this->x());
     settings.setValue("mainWindowY", this->y());
+    alarmsWindow->saveAlarms();
 }
 void MainWindow::paintEvent(QPaintEvent *event)
 {
     QMainWindow::paintEvent(event);
 }
+void MainWindow::mousePressEvent(QMouseEvent *event)
+{
+    if (event->button() == Qt::LeftButton) {
+        dragging = true;
+        mousePressPosition = event->globalPosition().toPoint() - frameGeometry().topLeft();
+    }
+}
+
+// Переопределяем событие перемещения мыши
+void MainWindow::mouseMoveEvent(QMouseEvent *event)
+{
+    if (dragging) {
+        move(event->globalPosition().toPoint() - mousePressPosition);
+    }
+}
+
+// Переопределяем событие отпускания кнопки мыши
+void MainWindow::mouseReleaseEvent(QMouseEvent *event)
+{
+    if (event->button() == Qt::LeftButton) {
+        dragging = false;
+    }
+}
+
