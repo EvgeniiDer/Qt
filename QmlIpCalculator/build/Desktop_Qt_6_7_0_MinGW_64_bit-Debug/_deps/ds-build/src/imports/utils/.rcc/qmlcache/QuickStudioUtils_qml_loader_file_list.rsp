@@ -1,0 +1,7 @@
+--resource
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/.rcc/qmake_QtQuick_Studio_Utils.qrc
+--resource
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/_deps/ds-build/src/imports/utils/.rcc/QuickStudioUtils_raw_qml_0.qrc
+/QtQuick/Studio/Utils/JsonListModel.qml
+/QtQuick/Studio/Utils/JsonBackend.qml
+/QtQuick/Studio/Utils/ChildListModel.qml

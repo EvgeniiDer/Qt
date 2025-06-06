@@ -1,0 +1,14 @@
+--bare
+-I
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug
+-I
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/qml
+-I
+C:/Qt/6.7.0/mingw_64/./qml
+--resource
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/configuration.qrc
+--resource
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/qmake_Main.qrc
+--resource
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/.rcc/QmlIpCalculatorApp_raw_qml_0.qrc
+C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/main.qml
