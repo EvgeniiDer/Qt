@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/">
-    <file alias="/qt-project.org/imports/QtQuick/Studio/EventSimulator">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/qml/QtQuick/Studio/EventSimulator</file>
-
-  </qresource>
-</RCC>

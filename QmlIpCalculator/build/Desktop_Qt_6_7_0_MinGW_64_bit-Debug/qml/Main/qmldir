@@ -1,4 +1,0 @@
-module Main
-typeinfo QmlIpCalculatorApp.qmltypes
-prefer :/qt/qml/Main/
-

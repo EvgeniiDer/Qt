@@ -1,0 +1,5 @@
+module QmlNetworkAnalyzer
+typeinfo appQmlNetworkAnalyzer.qmltypes
+prefer :/QmlNetworkAnalyzer/
+Main 1.0 Main.qml
+

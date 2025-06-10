@@ -1,0 +1,169 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2891653830cbf94a73ee.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "QmlNetworkAnalyzer",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-94e13dd24f353229df44.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-ac2fdced7f5658adb787.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-7f617a66e167e3904001.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-1665aaee7a24bbf6a0e0.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer-Debug-88fdc44585f98dd5cb40.json",
+					"name" : "appQmlNetworkAnalyzer",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_autogen-Debug-b03b01f1dc2f7e0bfa56.json",
+					"name" : "appQmlNetworkAnalyzer_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_autogen_timestamp_deps-Debug-cc176e7434e546ad80f5.json",
+					"name" : "appQmlNetworkAnalyzer_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_qmlimportscan-Debug-45b13ae9f6951269d913.json",
+					"name" : "appQmlNetworkAnalyzer_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_qmllint-Debug-122f721321e3b4f63501.json",
+					"name" : "appQmlNetworkAnalyzer_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_qmllint_json-Debug-5cdd2c7a728865d717fd.json",
+					"name" : "appQmlNetworkAnalyzer_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_qmllint_module-Debug-f890ff638eb76074a35c.json",
+					"name" : "appQmlNetworkAnalyzer_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_qmltyperegistration-Debug-8aaaab0bdc4f3aea66fd.json",
+					"name" : "appQmlNetworkAnalyzer_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appQmlNetworkAnalyzer_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appQmlNetworkAnalyzer_tooling-Debug-994e8dfc5679f42221f6.json",
+					"name" : "appQmlNetworkAnalyzer_tooling",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/admin2021/Documents/GitHub/Qt/QmlNetworkAnalyzer/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug",
+		"source" : "C:/Users/admin2021/Documents/GitHub/Qt/QmlNetworkAnalyzer"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

@@ -1,0 +1,110 @@
+[
+    {
+        "classes": [
+            {
+                "className": "IpCalculator",
+                "object": true,
+                "properties": [
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 0,
+                        "name": "ipAddress",
+                        "notify": "ipAddressChanged",
+                        "read": "getIpAddress",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setIpAddress"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 1,
+                        "name": "subnetMask",
+                        "notify": "subnetMaskChanged",
+                        "read": "getSubnetMask",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setSubnetMask"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 2,
+                        "name": "prefixLength",
+                        "notify": "prefixLengthChanged",
+                        "read": "getPrefixLength",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "int",
+                        "user": false,
+                        "write": "setPrefixLength"
+                    },
+                    {
+                        "constant": false,
+                        "designable": true,
+                        "final": true,
+                        "index": 3,
+                        "name": "info",
+                        "notify": "infoChanged",
+                        "read": "getInfo",
+                        "required": false,
+                        "scriptable": true,
+                        "stored": true,
+                        "type": "QString",
+                        "user": false,
+                        "write": "setInfo"
+                    }
+                ],
+                "qualifiedClassName": "IpCalculator",
+                "signals": [
+                    {
+                        "access": "public",
+                        "name": "ipAddressChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "subnetMaskChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "prefixLengthChanged",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "name": "infoChanged",
+                        "returnType": "void"
+                    }
+                ],
+                "slots": [
+                    {
+                        "access": "public",
+                        "name": "calculateInfo",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "ipcalculator.h",
+        "outputRevision": 68
+    }
+]

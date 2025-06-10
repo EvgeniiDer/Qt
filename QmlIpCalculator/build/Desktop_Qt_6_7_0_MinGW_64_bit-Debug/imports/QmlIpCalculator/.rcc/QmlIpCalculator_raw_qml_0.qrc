@@ -1,9 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/QmlIpCalculator/">
-    <file alias="Constants.qml">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/imports/QmlIpCalculator/Constants.qml</file>
-    <file alias="DirectoryFontLoader.qml">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/imports/QmlIpCalculator/DirectoryFontLoader.qml</file>
-    <file alias="EventListModel.qml">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/imports/QmlIpCalculator/EventListModel.qml</file>
-    <file alias="EventListSimulator.qml">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/imports/QmlIpCalculator/EventListSimulator.qml</file>
-  </qresource>
-</RCC>
-

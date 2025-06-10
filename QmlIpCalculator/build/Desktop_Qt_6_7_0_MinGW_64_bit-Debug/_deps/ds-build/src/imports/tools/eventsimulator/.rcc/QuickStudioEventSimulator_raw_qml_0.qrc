@@ -1,7 +1,0 @@
-<RCC>
-  <qresource prefix="/qt-project.org/imports/QtQuick/Studio/EventSimulator/">
-    <file alias="EventSimulator.qml">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/_deps/ds-src/src/imports/tools/eventsimulator/EventSimulator.qml</file>
-    <file alias="EventSimulatorDelegate.qml">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/_deps/ds-src/src/imports/tools/eventsimulator/EventSimulatorDelegate.qml</file>
-  </qresource>
-</RCC>
-

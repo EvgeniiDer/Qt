@@ -1,8 +1,0 @@
---resource
-C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/imports/QmlIpCalculator/.rcc/qmake_QmlIpCalculator.qrc
---resource
-C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/build/Desktop_Qt_6_7_0_MinGW_64_bit-Debug/imports/QmlIpCalculator/.rcc/QmlIpCalculator_raw_qml_0.qrc
-/qt/qml/QmlIpCalculator/Constants.qml
-/qt/qml/QmlIpCalculator/DirectoryFontLoader.qml
-/qt/qml/QmlIpCalculator/EventListModel.qml
-/qt/qml/QmlIpCalculator/EventListSimulator.qml

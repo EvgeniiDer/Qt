@@ -1,6 +1,0 @@
-<RCC>
-  <qresource prefix="/qt/qml/Main/">
-    <file alias="main.qml">C:/Users/admin2021/Documents/GitHub/Qt/QmlIpCalculator/main.qml</file>
-  </qresource>
-</RCC>
-
